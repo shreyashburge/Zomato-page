@@ -1,0 +1,181 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #d1e8dd;
+}
+
+.mainDiv {
+display: flex;
+justify-content: space-between;
+align-items: center;
+    background-color: #dbd6d6;
+}
+
+.img{
+
+
+width: 100px;
+height: 100px; 
+padding-left: 30px;
+
+
+}
+.div2{
+    padding-right: 40px;
+}
+
+.button {
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color:  #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 200px;
+}
+.button:hover {
+    border: 4px solid;
+    cursor :pointer;
+}
+
+.mainCon{
+    max-width: 100%;
+    padding:20px;
+    margin: 0 auto;
+    
+}
+
+.imgCon{
+width: 100%;
+}
+.imgConlogo {
+    width: 100%;
+   border-radius: 8px;
+   box-shadow:0 25px 50px -12px #2f3130;
+}
+
+.text {
+     font-weight:bold;
+    font-size: 32px;
+    color: rgb(19, 3, 0);
+    margin: 20px 0;
+}
+
+.expMenu{
+    padding:20px;
+}
+
+.foodCardDes{
+    padding: 25px;
+
+   
+}
+.foodCard{
+
+    background-color: #F9F9F9;
+    
+}
+
+
+.foodCardImg{
+    width:100%;
+
+}
+
+.foodImg{
+    width:100%;
+    border-radius:8px 8px 0 0;
+}
+
+
+.expText{
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 32px;
+    color: rgb(19, 3, 0);
+    margin: 20px 0;
+}
+
+@media (min-width : 768px) {
+    
+    .mainDiv{
+        justify-content: space-between;
+      padding : 10px 30px
+    
+    }
+    .mainCon{
+        margin-top:20px ;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center; 
+    
+    }
+    .text{
+        margin-right:10px;
+    
+    }
+
+    .menuList{
+        display: flex;
+        gap: 20px;
+        padding: 0 30px;
+    }
+
+    .expMenu{
+        position: relative;
+    }
+          .exploreMenuGrad{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+        z-index:-3;
+        transform:skewY(-5deg);
+          }
+
+#pizzaCard{
+    margin-top: -30px;
+    margin-bottom: 70px;
+      }
+
+}
+
+
+@media (min-width : 1024px) {
+
+    .mainCon{
+        max-width: 70%;
+    }
+.img{
+    width: 200px;
+    height: 200px;
+}
+
+.button{
+    padding:20px;
+    font-size: 15px;
+}
+
+.imgConlogo{
+    width: 100%;
+   
+}
+#pizzaCard{
+      height: 550px;
+}
+}
